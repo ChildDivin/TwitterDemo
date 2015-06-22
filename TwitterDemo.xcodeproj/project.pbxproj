@@ -14,6 +14,8 @@
 		E7B5B5871B3800DE007352FF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E7B5B5861B3800DE007352FF /* Images.xcassets */; };
 		E7B5B58A1B3800DE007352FF /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E7B5B5881B3800DE007352FF /* LaunchScreen.xib */; };
 		E7B5B5961B3800DE007352FF /* TwitterDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E7B5B5951B3800DE007352FF /* TwitterDemoTests.m */; };
+		E7B5B5A41B3800F3007352FF /* FHSStream.m in Sources */ = {isa = PBXBuildFile; fileRef = E7B5B5A11B3800F3007352FF /* FHSStream.m */; };
+		E7B5B5A51B3800F3007352FF /* FHSTwitterEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = E7B5B5A31B3800F3007352FF /* FHSTwitterEngine.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,10 @@
 		E7B5B58F1B3800DE007352FF /* TwitterDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TwitterDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7B5B5941B3800DE007352FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E7B5B5951B3800DE007352FF /* TwitterDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TwitterDemoTests.m; sourceTree = "<group>"; };
+		E7B5B5A01B3800F3007352FF /* FHSStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FHSStream.h; sourceTree = "<group>"; };
+		E7B5B5A11B3800F3007352FF /* FHSStream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FHSStream.m; sourceTree = "<group>"; };
+		E7B5B5A21B3800F3007352FF /* FHSTwitterEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FHSTwitterEngine.h; sourceTree = "<group>"; };
+		E7B5B5A31B3800F3007352FF /* FHSTwitterEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FHSTwitterEngine.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +87,7 @@
 		E7B5B5781B3800DE007352FF /* TwitterDemo */ = {
 			isa = PBXGroup;
 			children = (
+				E7B5B59F1B3800F3007352FF /* FHSTwitterEngine */,
 				E7B5B57D1B3800DE007352FF /* AppDelegate.h */,
 				E7B5B57E1B3800DE007352FF /* AppDelegate.m */,
 				E7B5B5801B3800DE007352FF /* ViewController.h */,
@@ -117,6 +124,17 @@
 				E7B5B5941B3800DE007352FF /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E7B5B59F1B3800F3007352FF /* FHSTwitterEngine */ = {
+			isa = PBXGroup;
+			children = (
+				E7B5B5A01B3800F3007352FF /* FHSStream.h */,
+				E7B5B5A11B3800F3007352FF /* FHSStream.m */,
+				E7B5B5A21B3800F3007352FF /* FHSTwitterEngine.h */,
+				E7B5B5A31B3800F3007352FF /* FHSTwitterEngine.m */,
+			);
+			path = FHSTwitterEngine;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -219,9 +237,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E7B5B5A51B3800F3007352FF /* FHSTwitterEngine.m in Sources */,
 				E7B5B5821B3800DE007352FF /* ViewController.m in Sources */,
 				E7B5B57F1B3800DE007352FF /* AppDelegate.m in Sources */,
 				E7B5B57C1B3800DE007352FF /* main.m in Sources */,
+				E7B5B5A41B3800F3007352FF /* FHSStream.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

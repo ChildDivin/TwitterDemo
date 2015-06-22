@@ -7,8 +7,17 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "FHSTwitterEngine.h"
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController<FHSTwitterEngineAccessTokenDelegate>
+{
+    
+}
+- (IBAction)btnLoginCK:(id)sender;
+- (IBAction)btnFriendsCK:(id)sender;
+- (IBAction)btnFollowerCK:(id)sender;
+- (IBAction)btn1CK:(id)sender;
+- (IBAction)btn2CK:(id)sender;
 
 
 @end
