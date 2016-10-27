@@ -134,6 +134,7 @@ static NSString * const url_followers_list = @"https://api.twitter.com/1.1/follo
 static NSString * const url_friends_ids = @"https://api.twitter.com/1.1/friends/ids.json";
 static NSString * const url_friends_list = @"https://api.twitter.com/1.1/friends/list.json";
 
+//https://api.twitter.com/1.1/statuses/update.json?status=Maybe%20he%27ll%20finally%20find%20his%20keys.%20%23peterfalk
 
 NSString * fhs_url_remove_params(NSURL *url) {
     if (url.absoluteString.length == 0) {
@@ -513,6 +514,17 @@ id removeNull(id rootObject) {
     
     NSURL *baseURL = [NSURL URLWithString:url_lists_update];
     return [self sendPOSTRequestForURL:baseURL andParams:@{@"list_id": listID, @"name": name}];
+}
+
+- (NSError *)PostTwistName:(NSString *)listID name:(NSString *)name {
+    if (listID.length == 0) {
+        return [NSError badRequestError];
+    } else if (name.length == 0) {
+        return [NSError badRequestError];
+    }
+    
+    NSURL *baseURL = [NSURL URLWithString:url_lists_update];
+    return [self sendPOSTRequestForURL:baseURL andParams:@{@"status": listID, @"name": name}];
 }
 
 - (NSError *)updateListWithID:(NSString *)listID description:(NSString *)description {

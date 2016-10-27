@@ -68,9 +68,15 @@
     if ([[FHSTwitterEngine sharedEngine] isAuthorized])
     {
         NSString *username = [[FHSTwitterEngine sharedEngine] authenticatedUsername];
-       
+        NSDictionary *dicDATA = [[FHSTwitterEngine sharedEngine] postTweet:@"hello"];
+         
     }
 }
 - (IBAction)btn2CK:(id)sender {
+    if ([[FHSTwitterEngine sharedEngine] isAuthorized])
+    {
+        NSString *username = [[FHSTwitterEngine sharedEngine] authenticatedUsername];
+        
+    }
 }
 @end
